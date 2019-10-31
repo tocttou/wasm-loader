@@ -10,7 +10,7 @@ const {
 const WebAssemblyModule = function(deps = {
   'global': {},
   'env': {
-    'memory': new Memory({initial: 10, limit: 100}),
+    'memory': new Memory({initial: 100}),
     'table': new Table({initial: 0, element: 'anyfunc'})
   }
 }) {
